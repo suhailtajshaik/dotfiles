@@ -73,7 +73,7 @@ brew install homebrew/dupes/screen
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
-brew install git
+#brew install git
 brew install git-flow
 #brew install imagemagick --with-webp
 #brew install lua
