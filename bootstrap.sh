@@ -4,6 +4,12 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 mkdir -p ~/source;
+mkdir -p ~/source/githubEC;
+mkdir -p ~/source/github;
+mkdir -p ~/source/bitbucket;
+mkdir -p ~/source/dockerhub;
+mkdir -p ~/devops
+
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
