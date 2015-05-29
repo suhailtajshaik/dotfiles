@@ -15,7 +15,14 @@ alias h="history"
 alias j="jobs"
 alias githubEC="cd ~/Source/githubEC"
 alias github="cd ~/Source/github"
-alias g3="cd ~/source/githubEC/CMSG3"
+alias github="cd ~/Source/bitbucket"
+alias dockerd="cd ~/Source/dockerhub"
+
+# Docker Hacks
+alias dockerd="cd ~/devops/docker"¬
+alias mongoinit="docker run -it -d -p 27017:27017 --name mongodb mongo mongod --rest --httpinterface --smallfil    es"¬
+alias mongodb="docker logs -f mongodb"¬
+alias mongo="docker exec -it mongodb mongo"¬
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
