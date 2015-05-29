@@ -3,6 +3,7 @@
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
+mkdir -p ~/source;
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
