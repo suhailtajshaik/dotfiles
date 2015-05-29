@@ -18,3 +18,4 @@ npm install -g bkts
 npm install -g protractor
 npm install -g karma-cli
 npm install -g shrinkwrap
+npm install -g bkts
