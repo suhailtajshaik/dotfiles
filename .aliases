@@ -19,10 +19,10 @@ alias github="cd ~/Source/bitbucket"
 alias dockerd="cd ~/Source/dockerhub"
 
 # Docker Hacks
-alias dockerd="cd ~/devops/docker"¬
-alias mongoinit="docker run -it -d -p 27017:27017 --name mongodb mongo mongod --rest --httpinterface --smallfiles"¬
-alias mongodb="docker logs -f mongodb"¬
-alias mongo="docker exec -it mongodb mongo"¬
+alias dockerd="cd ~/devops/docker"
+alias mongoinit="docker run -it -d -p 27017:27017 --name mongodb mongo mongod --rest --httpinterface --smallfiles"
+alias mongodb="docker logs -f mongodb"
+alias mongo="docker exec -it mongodb mongo"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
