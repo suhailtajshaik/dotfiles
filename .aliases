@@ -7,19 +7,13 @@
 #alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias githubEC="cd ~/Source/githubEC"
-alias github="cd ~/Source/github"
-alias github="cd ~/Source/bitbucket"
-alias dockerd="cd ~/Source/dockerhub"
 
 # Docker Hacks
-alias dockerd="cd ~/devops/docker"
 alias mongoinit="docker run -it -d -p 27017:27017 --name mongodb mongo mongod --rest --httpinterface --smallfiles"
 alias mongodb="docker logs -f mongodb"
 alias mongo="docker exec -it mongodb mongo"
@@ -47,14 +41,11 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-# Get week number
-alias week='date +%V'
-
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"

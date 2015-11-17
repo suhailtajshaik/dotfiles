@@ -71,7 +71,7 @@ brew install homebrew/dupes/screen
 #brew install xz
 
 # Install other useful binaries.
-brew install ack
+#brew install ack
 #brew install exiv2
 #brew install git
 brew install git-flow
@@ -96,8 +96,6 @@ brew install mackup
 
 # Install DevOps
 brew install ansible
-brew install docker
-brew install boot2docker
 
 # Remove outdated versions from the cellar.
 brew cleanup
