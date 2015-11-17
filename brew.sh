@@ -96,6 +96,7 @@ brew install mackup
 
 # Install DevOps
 brew install ansible
+brew install docker-machine
 
 # Remove outdated versions from the cellar.
 brew cleanup
