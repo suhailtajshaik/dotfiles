@@ -1,6 +1,6 @@
 # Node Version Manager
 if [ -d ~/.nvm ]; then
-	export NVM_DIR="~/.nvm"
+	export NVM_DIR=~/.nvm
 	[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"  # This loads nvm
 	nvm use stable
 fi
