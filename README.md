@@ -4,10 +4,10 @@
 
 ### Using Git and the bootstrap script
 
-You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
+You can clone the repository wherever you want. (I like to keep it in `~/dotfiles`.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/degnome/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/vzdigitalmedia/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -21,16 +21,6 @@ Alternatively, to update while avoiding the confirmation prompt:
 ```bash
 set -- -f; source bootstrap.sh
 ```
-
-### Git-free install
-
-To install these dotfiles without Git:
-
-```bash
-cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,LICENSE-MIT.txt}
-```
-
-To update later on, just run that command again.
 
 ### Specify the `$PATH`
 
@@ -61,6 +51,36 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
+
+### Install Ruby formulae
+
+When setting up a new Mac, you may want to install some common [Ruby](https://www.ruby-lang.org/en/) items.  I've found the best way to do this is with a Ruby Version Manager which will also install some necessities like Homebrew.
+
+```bash
+curl -sSL https://get.rvm.io | bash -s stable
+source ~/.profile
+rvm requirements
+rvm install ruby-stable
+rvm use ruby-2.2.1-stable
+source ~/.bashrc
+gem install bundle
+```
+
+### Install Homebrew formulae
+
+If you installed Ruby via Ruby Version Manager you'll already have Homebrew.  If not then you may want to install along with some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
+
+> If you like you can install my base recomendations.
+
+```bash
+./brew.sh
+```
+> Along with my base application recommendations.
+
+```bash
+./brewcask.sh
+```
+
 ### Sensible OS X defaults
 
 When setting up a new Mac, you may want to set some sensible OS X defaults:
@@ -69,10 +89,25 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
-### Install Homebrew formulae
+### Node formulae
 
-When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
+Normally I like to install node via brew, but I also like to ensure I can manage the version of Node I am running with a Node Version Manager.
 
 ```bash
-./brew.sh
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+nvm install stable
+```
+
+> As well if you desire you can install the base node global module recommmendations:
+
+```bash
+./nodemodules.sh
+```
+
+### Docker
+
+Finally it is always good now to have access to docker.
+
+```bash
+docker-machine create --driver virtualbox dev
 ```
