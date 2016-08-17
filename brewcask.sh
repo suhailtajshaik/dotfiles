@@ -27,4 +27,3 @@ brew cask install caffeine
 
 # miscellaneous
 brew cask install spotify
-brew cask install caskroom/versions/java7
