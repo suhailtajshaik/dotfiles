@@ -14,9 +14,17 @@ brew cask install vagrant
 brew cask install virtualbox
 brew cask install git-flow
 
-# other
-brew cask install spotify
+
+# code-editors
+brew cask install sublime-text
+brew cask install visual-studio-code
+
+# productivity
 brew cask install dash
 brew cask install macdown
 brew cask install slack
 brew cask install caffeine
+
+# miscellaneous
+brew cask install spotify
+brew cask install caskroom/versions/java7
