@@ -73,8 +73,8 @@ brew install homebrew/dupes/screen
 # Install other useful binaries.
 #brew install ack
 #brew install exiv2
-#brew install git
-brew install git-flow
+brew install git
+# brew install git-flow
 #brew install imagemagick --with-webp
 #brew install lua
 #brew install lynx
@@ -86,17 +86,20 @@ brew install git-flow
 brew install tree
 #brew install webkit2png
 #brew install zopfli
+brew install fortune
+brew install cowsay 
+brew install vcprompt
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
-brew install node
+# brew install node
 
 # Install mackup
 brew install mackup
 
 # Install DevOps
-brew install ansible
-brew install docker-machine
+# brew install ansible
+# brew install docker-machine
 brew install docker
 
 

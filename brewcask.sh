@@ -10,19 +10,22 @@ brew cask install firefox
 brew cask install google-chrome
 
 # development
-brew cask install docker
-brew cask install git-flow
-brew cask install yarn
+# brew cask install docker
+# brew cask install git-flow
+# brew cask install yarn
 
 # code-editors
-brew cask install sublime-text
+# brew cask install sublime-text
 brew cask install visual-studio-code
 
 # productivity
-brew cask install dash
-brew cask install macdown
-brew cask install slack
-brew cask install KeepingYouAwake
+brew cask install spectacle
+brew cask install alfred
+brew cask install caffeine
+# brew cask install dash
+# brew cask install macdown
+# brew cask install slack
+# brew cask install KeepingYouAwake
 
 # miscellaneous
-brew cask install spotify
+# brew cask install spotify

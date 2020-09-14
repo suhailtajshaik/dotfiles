@@ -7,7 +7,7 @@
 You can clone the repository wherever you want. (I like to keep it in `~/dotfiles`.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/vzdigitalmedia/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/suhailtajshaik/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -49,10 +49,10 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/suhailtaj/dotfiles/fork) instead, though.
 
 
-### Install Ruby formulae
+<!-- ### Install Ruby formulae
 
 When setting up a new Mac, you may want to install some common [Ruby](https://www.ruby-lang.org/en/) items.  I've found the best way to do this is with a Ruby Version Manager which will also install some necessities like Homebrew.
 
@@ -64,7 +64,7 @@ rvm install ruby-stable
 rvm use ruby-2.2.1-stable
 source ~/.bashrc
 gem install bundle
-```
+``` -->
 
 ### Install Homebrew formulae
 
@@ -94,7 +94,7 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 Normally I like to install node via brew, but I also like to ensure I can manage the version of Node I am running with a Node Version Manager.
 
 ```bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 nvm install stable
 ```
 
@@ -104,10 +104,10 @@ nvm install stable
 ./nodemodules.sh
 ```
 
-### Docker
+<!-- ### Docker
 
 Finally it is always good now to have access to docker.
 
 ```bash
 docker-machine create --driver virtualbox dev
-```
+``` -->
