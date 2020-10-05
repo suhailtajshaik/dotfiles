@@ -3,9 +3,9 @@
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
-mkdir -p ~/source;
-mkdir -p ~/source/github;
-mkdir -p ~/source/bitbucket;
+mkdir -p ~/dev;
+mkdir -p ~/dev/github;
+mkdir -p ~/dev/bitbucket;
 
 
 function doIt() {

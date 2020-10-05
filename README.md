@@ -1,4 +1,4 @@
-# Daniel’s dotfiles
+# Suhail’s dotfiles
 
 ## Installation
 
